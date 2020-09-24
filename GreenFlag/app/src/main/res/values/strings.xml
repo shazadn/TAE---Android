@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Green Flag</string>
+    <string name="create_acc_msg">GreenFlag customers can \n create account to access</string>
+    <string name="benefit_msg_1">Car health updates</string>
+    <string name="benefit_msg_2">Request a rescue online</string>
+    <string name="benefit_msg_3">Policy information</string>
+    <string name="btn_creat_acc">Create an account</string>
+    <string name="email_txt">Email address</string>
+    <string name="create_pass_txt">Create password</string>
+    <string name="repeat_pass_txt">Repeat password</string>
+    <string name="btn_next">Next</string>
+    <string name="pass_msg">You password should have a minimum of 8 \n
+    characters and contain at least one \n number, one uppercase and one
+        lower \n case letter. You can use special characters.. </string>
+    <string name="val_msg"></string>
+</resources>
