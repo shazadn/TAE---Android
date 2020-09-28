@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">User Interface</string>
+    <string name="name_label">Name</string>
+    <string name="phone_label">Phone</string>
+    <string name="area_label">Area</string>
+    <string name="address_label">Address</string>
+    <string name="city_label">City</string>
+    <string name="state_label">State</string>
+    <string name="zip_label">Zip</string>
+    <string name="email_label">Email</string>
+    <string name="birthday_label">Birthday</string>
+    <string name="save_btn">Save User</string>
+</resources>
