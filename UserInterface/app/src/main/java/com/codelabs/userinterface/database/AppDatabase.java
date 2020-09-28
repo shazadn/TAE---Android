@@ -9,7 +9,7 @@ import androidx.room.RoomDatabase;
 import com.codelabs.userinterface.dao.UserDao;
 import com.codelabs.userinterface.entities.User;
 
-@Database(entities = {User.class}, version = 1, exportSchema = false)
+@Database(entities = {User.class}, version = 3, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
     private static AppDatabase sInstance;
     private static final String DATABASE_NAME = "myroom";

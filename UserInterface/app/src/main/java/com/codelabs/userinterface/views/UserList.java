@@ -38,7 +38,7 @@ public class UserList extends AppCompatActivity {
             public void run() {
                 userList = appDatabase.userDao().loadAllUsers();
                 for(int i=0; i< userList.size(); i++){
-                    Log.i("TABLE", "Person Table values " + userList.get(i).getName());
+                    Log.i("TABLE", "Person Table values " + userList.get(i).getArea());
 
                 }
                 runOnUiThread(new Runnable() {
@@ -49,7 +49,7 @@ public class UserList extends AppCompatActivity {
                         String[] userArr = new String[userList.size()];
                         for(int i=0; i< userList.size(); i++){
                             Log.i("TABLE", "Person Table values " + userList.get(i).getName());
-                            userArr[i] = userList.get(i).getName();
+                            userArr[i] = userList.get(i).toString();
                         }
                         listView = findViewById(R.id.listview_id);
                         arrayAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, userArr);

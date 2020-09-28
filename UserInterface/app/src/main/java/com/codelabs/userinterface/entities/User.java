@@ -84,5 +84,21 @@ public class User {
     public String getBirthday() { return birthday; }
 
     public void setBirthday(String birthday) { this.birthday = birthday; }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", area='" + area + '\'' +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", zip='" + zip + '\'' +
+                ", email='" + email + '\'' +
+                ", birthday='" + birthday + '\'' +
+                '}';
+    }
 }
 

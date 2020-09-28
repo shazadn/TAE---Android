@@ -34,6 +34,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
     DatePickerDialog picker;
     private EditText name, phone, address, city, zip, email, bDay;
     private Spinner area, state;
+    private String areaVal;
 
 
     @Override
@@ -114,6 +115,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
         stateList.add("Cheshire");
         stateList.add("Kent");
         stateList.add("Worcestershire");
+
         ArrayAdapter<String> dataAdapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, stateList) {
             @Override
             public boolean isEnabled(int position) {
@@ -166,10 +168,10 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
         final User user = new User(
                 name.getText().toString(),
                 phone.getText().toString(),
-                area.toString(),
+                area.getSelectedItem().toString(),
                 address.getText().toString(),
                 city.getText().toString(),
-                state.toString(),
+                state.getSelectedItem().toString(),
                 zip.getText().toString(),
                 email.getText().toString(),
                 bDay.getText().toString()
@@ -191,19 +193,20 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
 
 
     @Override
-        public void onItemSelected (AdapterView < ? > parent, View view,int position, long id){
-            // On selecting a spinner item
-            String item = parent.getItemAtPosition(position).toString();
-            // Showing selected spinner item
-//        Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        // On selecting a spinner item
+        //areaVal = parent.getItemAtPosition(position).toString();
 
-        }
-
-        public void onNothingSelected (AdapterView < ? > arg0){
-            // TODO Auto-generated method stub
-
-        }
-
+        // Showing selected spinner item
+       //Toast.makeText(parent.getContext(), "Selected: " + areaVal, Toast.LENGTH_LONG).show();
 
     }
+
+    public void onNothingSelected(AdapterView<?> arg0) {
+        // TODO Auto-generated method stub
+
+    }
+
+
+}
 
